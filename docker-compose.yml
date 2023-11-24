@@ -8,9 +8,9 @@ services:
     ports:
       - 8080:80
     environment:
-      - SHARELATEX_MONGO_URL=mongodb://mongo:27017/sharelatex?replicaSet=rs
-      - SHARELATEX_REDIS_HOST=redis
-      - SHARELATEX_SITE_URL=http://localhost:8080
+      - SHARELATEX_MONGO_URL="mongodb://mongo:27017/sharelatex?replicaSet=rs"
+      - SHARELATEX_REDIS_HOST="redis"
+      - SHARELATEX_SITE_URL="http://localhost:8080"
     depends_on:
       - mongo
       - redis
